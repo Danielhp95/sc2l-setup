@@ -83,7 +83,7 @@ def extract_maps(map_zips):
     logging.info('Extracting maps')
     for map_zip in map_zips:
         logging.info('Extracting {} into Starcraft Maps Folder'.format(map_zip))
-        extract_zip_file_into_directory(map_zip, get_starcraft_directory() + 'Maps/')
+        extract_zip_file_into_directory(map_zip, get_starcraft_directory() + '/StarCraftII/Maps/')
     pass
 
 
@@ -93,7 +93,7 @@ def extract_zip_file_into_directory(zip_file, directory):
 
 
 def get_starcraft_directory():
-    return os.getenv('SC2PATH') if 'SC2PATH' in os.environ else os.getenv('HOME') + '/StarCraftII/'
+    return os.getenv('SC2PATH') if 'SC2PATH' in os.environ else os.getenv('HOME')
 
 
 # Main

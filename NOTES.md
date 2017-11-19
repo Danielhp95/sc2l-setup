@@ -17,5 +17,5 @@ If Py2SC was downloaded using this script, the Py2SC source code resides in:
 Where `{Env-ID}` is randomly generated via virualenv.
 
 ## Links of interest:
-[Oficial documentation](https://github.com/deepmind/pysc2/blob/master/docs/environment.md "pysc2 environment official documentation")
-[PySC2 repository](https://github.com/deepmind/pysc2 "PySC2 official repository")
+[Oficial documentation](https://github.com/deepmind/pysc2/blob/master/docs/environment.md "pysc2 environment official documentation")  
+[PySC2 repository](https://github.com/deepmind/pysc2 "PySC2 official repository")  

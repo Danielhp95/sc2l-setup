@@ -1,9 +1,20 @@
 # Notes for Py2SCL
 
+### Installation script
+
+The script is meant to be used in LINUX distributions.
+
+The installation follows these steps:
+1. Checks if StarcraftII is already installed. It downloads it and installs it otherwise.
+2. Downloads all available maps listed in the map section [here](https://github.com/Blizzard/s2client-proto "StarcraftII client protocol").  
+3. Downloads all available replays found in the replays section [here](https://github.com/Blizzard/s2client-proto "StarcraftII client protocol").  
+
+
+
 ### Directories of interest
-`$SC2PATH` environmental variable may be present, it contains the path to the Starcraft2 directory.
-`$SC2PATH/Maps` directory containing all available maps.
-`$SC2PATH/Replays` directory containing all available replays.
+`$SC2PATH` environmental variable may be present, it contains the path to the Starcraft2 directory.  
+`$SC2PATH/Maps` directory containing all available maps.  
+`$SC2PATH/Replays` directory containing all available replays.  
 
 
 #### Source code
@@ -21,7 +32,7 @@ Watch a replay: `python -m pysc2.bin.play --replay <path-to-replay>`
 
 
 ### Maps
-[Ladder maps](http://wiki.teamliquid.net/starcraft2/Maps/Ladder_Maps/Legacy_of_the_Void "Ladder Maps in Legacy of The Void") are maps played by human players on Battle.net. A few are active at a time. Every fewmonths a new season brings a new set of maps.
+[Ladder maps](http://wiki.teamliquid.net/starcraft2/Maps/Ladder_Maps/Legacy_of_the_Void "Ladder Maps in Legacy of The Void") are maps played by human players on Battle.net. A few are active at a time. Every fewmonths a new season brings a new set of maps.  
 Melee maps are made specifically for machine learning. The Flat maps have no special features on the terrain, encouraging easy attacking. The number specifies the map size.
 The Simple maps are more normal with expansions, ramps, and lanes of attack, but are smaller than normal ladder maps. The number specifies the map size.
 
@@ -30,4 +41,6 @@ The Simple maps are more normal with expansions, ramps, and lanes of attack, but
 [PySC2 environment documentation](https://github.com/deepmind/pysc2/blob/master/docs/environment.md "pysc2 environment official documentation")  
 [PySC2 Mini-Games documentation](https://github.com/deepmind/pysc2/blob/master/docs/mini_games.md "pysc2 environment official documentation")   
 [PySC2 Maps documentation](https://github.com/deepmind/pysc2/blob/master/docs/maps.md "Maps documentation")   
-[PySC2 repository](https://github.com/deepmind/pysc2 "PySC2 official repository")  
+[PySC2 repository](https://github.com/deepmind/pysc2 "PySC2 official repository")   
+[Blizzard StarcraftII client repository](https://github.com/Blizzard/s2client-proto "Blizzard StarcraftII client repository")  
+[StarCraft II Paper](https://deepmind.com/documents/110/sc2le.pdf "PDF version of StarCraft II paper")  

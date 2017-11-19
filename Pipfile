@@ -3,13 +3,14 @@ url = "https://pypi.python.org/simple"
 verify_ssl = true
 
 [dev-packages]
+ipython = "*"
 
 [packages]
 
 requests = "*"
 lxml = "*"
-beautifulsoup4 = "*"
-pysc2 = "*"
+"beautifulsoup4" = "*"
+"pysc2" = "*"
 baselines = "*"
 
 

@@ -4,10 +4,10 @@
 python -m 
 ```
 
-# # # Environmental variables
+### Environmental variables
 `SC2PATH` may be present, containing the path to the directory containing Starcraft 2.
 
-# # # Source code
+### Source code
 If Py2SC was downloaded using this script, the Py2SC source code resides in: 
 
 ```bash
@@ -16,6 +16,6 @@ If Py2SC was downloaded using this script, the Py2SC source code resides in:
 
 Where `{Env-ID}` is randomly generated via virualenv.
 
-# # Links of interest:
+## Links of interest:
 [Oficial documentation] (https://github.com/deepmind/pysc2/blob/master/docs/environment.md "pysc2 environment official documentation")
 [PySC2 repository] (https://github.com/deepmind/pysc2 "PySC2 official repository")

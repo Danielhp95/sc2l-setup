@@ -56,17 +56,24 @@ def find_all_map_links(soup):
     all_maps  = [map_tag.attrs['href'] for map_tag in clean_all_map_packs_list]
     return all_maps
 
+def find_all_replay_links(soup):
+    replay_packs_tag = soup.find('a', href='#replay-packs')
+    all_replay_packs_list = replay_packs_tag.parent.findNextSibling()
+    clean_all_replay_packs_list = [ list_item.findChild() for list_item in all_replay_packs_list.findChildren() if list_item.findChild is not None]
+    all_replays = [replay_tag.attres['href'] for replay_tag in clean_all_replay_packs_list]
+    return all_replays
+
 
 # test
 def download_maps():
-    logging.info('Downloading all available maps')
+    logging.info('Downloading all available MAPS')
     blizzard_repo = 'https://github.com/Blizzard/s2client-proto#downloads'
     response = requests.get(blizzard_repo)
     soup = BeautifulSoup(response.content, 'lxml')
 
     download_links = find_all_map_links(soup)
     number_of_map_sets = len(download_links)
-    logging.info('Found {} available sets of maps'.format(number_of_map_sets))
+    logging.info('Found {} available sets of MAPS'.format(number_of_map_sets))
 
     map_zips = []
     for number, map_link in enumerate(download_links):
@@ -77,6 +84,17 @@ def download_maps():
             map_zips.append(os.path.abspath(f.name))
 
     return map_zips
+
+
+def download_replays():
+    logging.info('Downloading all available REPLAYS')
+    blizzard_repo = 'https://github.com/Blizzard/s2client-proto#downloads'
+    response = requests.get(blizzard_repo)
+    soup = BeautifulSoup(response.content, 'lxml')
+
+    download_links = find_all_replay_links(soup)
+    number_of_replay_packs = len(download_links)
+    logging.info('Found {} available sets of REPLAYS'.format(number_of_replay_packs))
 
 
 def extract_maps(map_zips):
@@ -112,5 +130,6 @@ def install_sc2le(starcraft_directory=os.getenv('Home')):
         os.remove(zip_file)
 
     # Add replays as well?
+    replay_zips = download_replays()
 
 install_sc2le()

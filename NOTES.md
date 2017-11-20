@@ -3,7 +3,7 @@
 ### Requirements
 
 The script is meant to be used in LINUX distributions.   
-The installation script uses [virtualenv](https://iamzed.com/2009/05/07/a-primer-on-virtualenv/ "virtualenv tutorial") to handle python virtual environments. If you don't have `virtualenv` installed in your system you can use `pip install virtualenv` to install it.
+The installation script uses [pipenv](https://docs.pipenv.org/ "pipenv tutorial") to handle python virtual environments. If you don't have `pipenv` installed in your system you can use `pip install pipenv` to install it.
 
 ### Installation script
 
@@ -19,7 +19,7 @@ The installation follows these steps:
 `$SC2PATH/Maps` directory containing all available maps.  
 `$SC2PATH/Replays` directory containing all available replays.  
 
- StarcraftII directory structure:  
+ StarCraftII directory structure:  
  ```bash
     StarCraft II/
         Battle.net/

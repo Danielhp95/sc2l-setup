@@ -5,6 +5,9 @@
 The script is meant to be used in LINUX distributions.   
 The installation script uses [pipenv](https://docs.pipenv.org/ "pipenv tutorial") to handle python virtual environments. If you don't have `pipenv` installed in your system you can use `pip install pipenv` to install it.
 
+Once `pipenv` is installed, run this command inside the directory to install all required dependencies: `pipenv install`. For more information regarding `pipenv`, run `pipenv` (the commands without argument).
+
+
 ### Installation script
 
 The installation follows these steps:  
@@ -56,4 +59,4 @@ The Simple maps are more normal with expansions, ramps, and lanes of attack, but
 [PySC2 Maps documentation](https://github.com/deepmind/pysc2/blob/master/docs/maps.md "Maps documentation")   
 [PySC2 repository](https://github.com/deepmind/pysc2 "PySC2 official repository")   
 [Blizzard StarcraftII client repository](https://github.com/Blizzard/s2client-proto "Blizzard StarcraftII client repository")  
-[StarCraft II Paper](https://deepmind.com/documents/110/sc2le.pdf "PDF version of StarCraft II paper")  
+[DeepMind StarCraft II Paper](https://deepmind.com/documents/110/sc2le.pdf "PDF version of StarCraft II paper")  

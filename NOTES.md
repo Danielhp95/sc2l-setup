@@ -1,8 +1,12 @@
 # Notes for Py2SCL
 
+### Requirements
+
+The script is meant to be used in LINUX distributions.   
+The installation script uses [virtualenv](https://iamzed.com/2009/05/07/a-primer-on-virtualenv/ "virtualenv tutorial") to handle python virtual environments. If you don't have `virtualenv` install in your system you can use `pip install virtualenv` to install it.
+
 ### Installation script
 
-The script is meant to be used in LINUX distributions. It uses [virtualenv](https://iamzed.com/2009/05/07/a-primer-on-virtualenv/ "virtualenv tutorial") to handle python virtual environments. If you don't have `virtualenv` install in your system you can use `pip install virtualenv` to install it.
 
 The installation follows these steps:  
 1. Checks if StarcraftII is already installed. It downloads it and installs it otherwise.   

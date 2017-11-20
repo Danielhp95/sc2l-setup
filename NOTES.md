@@ -2,12 +2,12 @@
 
 ### Installation script
 
-The script is meant to be used in LINUX distributions.
+The script is meant to be used in LINUX distributions. It uses [virtualenv](https://iamzed.com/2009/05/07/a-primer-on-virtualenv/ "virtualenv tutorial") to handle python virtual environments.  
 
-The installation follows these steps:
-1. Checks if StarcraftII is already installed. It downloads it and installs it otherwise.
-2. Downloads all available maps listed in the map section [here](https://github.com/Blizzard/s2client-proto "StarcraftII client protocol").  
-3. Downloads all available replays found in the replays section [here](https://github.com/Blizzard/s2client-proto "StarcraftII client protocol").  
+The installation follows these steps:  
+1. Checks if StarcraftII is already installed. It downloads it and installs it otherwise.   
+2. Downloads all available maps listed in the map section [here](https://github.com/Blizzard/s2client-proto "StarcraftII client protocol").      
+3. Downloads all available replays found in the replays section [here](https://github.com/Blizzard/s2client-proto "StarcraftII client protocol").   
 
 
 

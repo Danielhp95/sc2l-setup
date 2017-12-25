@@ -151,13 +151,13 @@ def download_and_extract_replays():
 
 
 def install_sc2le(starcraft_directory=os.getenv('Home')):
-    # starcraft_exists = check_if_startcraftII_exists()
-    # logging.info('StarcraftII is {}'.format('PRESENT' if starcraft_exists else 'MISSING'))
-    # if not starcraft_exists:
-    #     download_and_extract_starcraftII()
+    starcraft_exists = check_if_startcraftII_exists()
+    logging.info('StarcraftII is {}'.format('PRESENT' if starcraft_exists else 'MISSING'))
+    if not starcraft_exists:
+        download_and_extract_starcraftII()
 
     download_and_extract_maps()
-    # download_and_extract_replays()
+    download_and_extract_replays()
 
 
 install_sc2le()

@@ -156,11 +156,20 @@ def install_sc2le(starcraft_directory=os.getenv('Home')):
     if not starcraft_exists:
         download_and_extract_starcraftII()
 
-    download_and_extract_maps()
-    download_and_extract_replays()
+    check_for_permission_before_downloading("MAPS", download_and_extract_maps)
+    check_for_permission_before_downloading("REPLAYS", download_and_extract_replays)
 
 
-install_sc2le()
-# print(download_replays())
-# print(get_starcraft_directory())
-# extract_zip_file_into_directory('/home/sarios/Projects/sc2l-setup/0temp.zip', get_starcraft_directory() + '/Replays/')
+def check_for_permission_before_downloading(download_name, download_function):
+    print("Do you want to download {} [y/n]".format(download_name))
+    wants_to_download = check_for_comfirmation()
+    if wants_to_download:
+        download_function()
+
+
+def check_for_comfirmation():
+    return input() == 'y'
+
+
+if __name__ == '__main__':
+    install_sc2le()

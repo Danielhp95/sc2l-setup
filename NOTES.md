@@ -15,6 +15,12 @@ The installation follows these steps:
 2. Downloads all available maps listed in the map section [here](https://github.com/Blizzard/s2client-proto "StarcraftII client protocol").      
 3. Downloads all available replays found in the replays section [here](https://github.com/Blizzard/s2client-proto "StarcraftII client protocol").   
 
+### Troubleshooting 
+
+Firstly, be a smart cookie. This script has worked on various machines, any installation error will most likely be due to some dependency missing on your system. Try to see what dependency it is and install it.
+
+`box2d-kengz` depends on [swig](www.swig.org). Swig can be installed on the command line via `sudo apt-get install swig`
+
 
 
 ### Directories of interest

@@ -10,8 +10,8 @@ ipython = "*"
 
 requests = "*"
 lxml = "*"
-beautifulsoup4 = "*"
-pysc2 = "*"
+"beautifulsoup4" = "*"
+"pysc2" = "*"
 baselines = "*"
 
 

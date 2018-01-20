@@ -49,7 +49,7 @@ Where `{Env-ID}` is randomly generated via pipenv.
 
 ### Useful commands
 List of all maps: `python -m pysc2.bin.map_list`  
-List of all available actions' `python -m python -m pysc2.bin.valid_actions`  
+List of all available actions' `python -m pysc2.bin.valid_actions`  
 Watch a replay: `python -m pysc2.bin.play --replay <path-to-replay>`  
 
 In case you are not familiar with the `-m` flag (module-name flag), an extract from the `man python` documention:

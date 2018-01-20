@@ -74,3 +74,4 @@ The Simple maps are more normal with expansions, ramps, and lanes of attack, but
 [PySC2 repository](https://github.com/deepmind/pysc2 "PySC2 official repository")   
 [Blizzard Starcraft II client repository](https://github.com/Blizzard/s2client-proto "Blizzard StarcraftII client repository")  
 [DeepMind StarCraft II Paper](https://deepmind.com/documents/110/sc2le.pdf "PDF version of StarCraft II paper")  
+[Extra mini-games](https://github.com/SoyGema/Startcraft_pysc2_minigames "Community made mini-games")
